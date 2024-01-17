@@ -1,4 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+##Descrição:
+O projeto "Next.js To-Do List" é uma aplicação web simples e poderosa para gerenciamento de tarefas, desenvolvida utilizando a biblioteca React com o framework Next.js. A aplicação possui recursos avançados, como integração com o Firebase para armazenamento em tempo real e autenticação de usuários, além de oferecer a capacidade de receber doações por meio do PayPal.
+
+##Funcionalidades Principais:
+To-Do List Dinâmica:
+
+Adicione, edite e exclua tarefas de maneira fácil e intuitiva.
+Marque tarefas como concluídas para um gerenciamento eficaz.
+Autenticação de Usuário:
+
+Registro e login seguros usando autenticação Firebase.
+Proteção de rotas para garantir que apenas usuários autenticados acessem a aplicação.
+Armazenamento em Tempo Real:
+
+Utilização do Firebase Firestore para armazenar e sincronizar dados em tempo real.
+Atualizações instantâneas em todas as instâncias da aplicação quando as alterações são feitas.
+Integração com PayPal:
+
+Possibilidade de fazer doações para apoiar o desenvolvimento contínuo do projeto.
+Fluxo de pagamento seguro e intuitivo usando a API do PayPal.
+
+##Tecnologias Utilizadas:
+###Frontend:
+
+React
+Next.js
+Styled-components para estilização
+Backend e Banco de Dados:
+Firebase (Firestore para armazenamento em tempo real)
 
 ## Getting Started
 
@@ -16,21 +44,4 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
