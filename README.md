@@ -1,7 +1,7 @@
-##Descrição:
+## Descrição:
 O projeto "Next.js To-Do List" é uma aplicação web simples e poderosa para gerenciamento de tarefas, desenvolvida utilizando a biblioteca React com o framework Next.js. A aplicação possui recursos avançados, como integração com o Firebase para armazenamento em tempo real e autenticação de usuários, além de oferecer a capacidade de receber doações por meio do PayPal.
 
-##Funcionalidades Principais:
+## Funcionalidades Principais:
 To-Do List Dinâmica:
 
 Adicione, edite e exclua tarefas de maneira fácil e intuitiva.
@@ -19,8 +19,8 @@ Integração com PayPal:
 Possibilidade de fazer doações para apoiar o desenvolvimento contínuo do projeto.
 Fluxo de pagamento seguro e intuitivo usando a API do PayPal.
 
-##Tecnologias Utilizadas:
-###Frontend:
+## Tecnologias Utilizadas:
+### Frontend:
 
 React
 Next.js
