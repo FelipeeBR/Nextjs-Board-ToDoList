@@ -5,11 +5,12 @@ export async function POST(req: NextRequest) {
     try {
         const dados = await req.json();
 
-        var filter = dados.venda.filter(function(e:any) {
-            var status = e.status
-            return status;
-        });
-        console.log(filter);
+        const statusVenda = dados.venda.status;
+        if (statusVenda === 'Finalizada') {
+            console.log('A compra foi finalizada. Executar lógica adicional se necessário.');
+        } else {
+            console.log('A compra não foi finalizada. Ignorando.');
+        }
 
         return NextResponse.json({ message:"informação recebida com sucesso."}, {status: 200});
     } catch (error) {
