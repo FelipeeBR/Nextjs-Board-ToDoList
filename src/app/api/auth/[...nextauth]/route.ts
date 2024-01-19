@@ -6,7 +6,7 @@ import DiscordProvider from "next-auth/providers/discord";
 
 const authOptions = {
     providers: [
-        DiscordProvider({
+        GitHubProvider({
           clientId: process.env.GITHUB_ID as string,
           clientSecret: process.env.GITHUB_SECRET as string,
         }),
