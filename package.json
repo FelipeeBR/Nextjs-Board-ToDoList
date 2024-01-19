@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "SET NODE_ENV=staging&& nodemon app",
-    "production": "set NODE_ENV=production&& nodemon app",
+    "start": "next start",
+    "production": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "next lint"
   },
