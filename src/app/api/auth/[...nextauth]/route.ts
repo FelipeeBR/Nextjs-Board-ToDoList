@@ -1,11 +1,12 @@
 import NextAuth from "next-auth/next";
 import GitHubProvider from 'next-auth/providers/github';
 import firebase from '@/services/firebaseConnection';
+import DiscordProvider from "next-auth/providers/discord";
 
 
-export const authOptions = {
+const authOptions = {
     providers: [
-        GitHubProvider({
+        DiscordProvider({
           clientId: process.env.GITHUB_ID as string,
           clientSecret: process.env.GITHUB_SECRET as string,
         }),
