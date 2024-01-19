@@ -4,9 +4,9 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
     try {
         const dados = await req.json();
-        console.log('Postback recebido:', dados);
 
         const statusVenda = dados.venda.status;
+        console.log(statusVenda);
         if (statusVenda === 'Finalizada') {
             console.log('A compra foi finalizada. Executar lógica adicional se necessário.');
         } else {
