@@ -10,9 +10,9 @@ export async function POST(req: NextRequest) {
         const cnpj_cpf = dados["comprador"]["cnpj_cpf"];
         const email = dados["comprador"]["email"]
 
-        if(chaveUnica !== "3f842492bf58a2c5b5150eed082a04e4"){
+        /*if(chaveUnica !== "3f842492bf58a2c5b5150eed082a04e4"){
             return;
-        }
+        }*/
 
         /*if(chave !== "4a920341e79639658c2459847e146da9"){
             return;
