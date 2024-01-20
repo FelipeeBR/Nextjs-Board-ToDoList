@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
     try {
         const dados = await req.json();
-        console.log(dados);
+        //console.log(dados);
         const chaveUnica = dados["chave_unica"];
         const chave = dados['produto']['chave'];
         const cnpj_cpf = dados["comprador"]["cnpj_cpf"];
