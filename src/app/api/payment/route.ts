@@ -14,9 +14,9 @@ export async function POST(req: NextRequest) {
             return;
         }
 
-        if(chave !== "4a920341e79639658c2459847e146da9"){
+        /*if(chave !== "4a920341e79639658c2459847e146da9"){
             return;
-        }
+        }*/
 
         const statusVenda = dados["venda"]["status"];
         console.log(statusVenda);
