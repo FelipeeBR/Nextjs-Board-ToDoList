@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { exit } from "process";
 
 
 export async function POST(req: NextRequest) {
@@ -12,11 +11,11 @@ export async function POST(req: NextRequest) {
         const email = dados["comprador"]["email"]
 
         if(chaveUnica !== "3f842492bf58a2c5b5150eed082a04e4"){
-            exit();
+            return;
         }
 
-        if(chave !== "b1a4e746c913ac058575403c6408622b"){
-            exit();
+        if(chave !== "4a920341e79639658c2459847e146da9"){
+            return;
         }
 
         const statusVenda = dados["venda"]["status"];
