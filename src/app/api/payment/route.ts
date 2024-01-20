@@ -5,17 +5,19 @@ import { exit } from "process";
 export async function POST(req: NextRequest) {
     try {
         const dados = await req.json();
-        const chave = dados.produtos.chave;
         console.log(dados);
-
+        const cnpj_cpf = dados["comprador"]["cnpj_email"];
+        const email = dados["comprador"]["email"]
         /*if(chave !== "3f842492bf58a2c5b5150eed082a04e4"){
             exit();
         }*/
 
-        const statusVenda = dados.venda.status;
+        const statusVenda = dados["venda"]["status"];
         console.log(statusVenda);
         if (statusVenda === 'Finalizada') {
             console.log('A compra foi finalizada.');
+            console.log(cnpj_cpf);
+            console.log(email);
         } else {
             console.log('A compra não foi finalizada. Ignorando.');
         }
