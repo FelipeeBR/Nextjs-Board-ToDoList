@@ -5,22 +5,17 @@ export async function POST(req: NextRequest) {
     try {
         const dados = await req.json();
         console.log(dados);
-        const chaveUnica = dados["chave_unica"];
-        const chave = dados['produto']['chave'];
-        const cnpj_cpf = dados["comprador"]["cnpj_cpf"];
-        const email = dados["comprador"]["email"]
+        const name = dados["customer"]["full_name"];
+        const cnpj_cpf = dados["customer"]["identification_number"];
+        const email = dados["customer"]["email"];
 
-        /*if(chaveUnica !== "3f842492bf58a2c5b5150eed082a04e4"){
+        /*if(chave !== "00ede988d3b5fd2b6cd6fcba2a300ad8"){
             return;
         }*/
 
-        /*if(chave !== "4a920341e79639658c2459847e146da9"){
-            return;
-        }*/
-
-        const statusVenda = dados["venda"]["status"];
+        const statusVenda = dados["sale_status_detail"];
         console.log(statusVenda);
-        if (statusVenda === 'Finalizada') {
+        if (statusVenda === 'pending') {
             console.log('A compra foi finalizada.');
             console.log(cnpj_cpf);
             console.log(email);
